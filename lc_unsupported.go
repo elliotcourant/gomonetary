@@ -3,5 +3,5 @@
 package monetary
 
 func LocaleSupported() bool {
-	return true
+	return false
 }
