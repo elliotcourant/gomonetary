@@ -30,6 +30,32 @@ func main() {
 	golog.Infof("generated metadata for %d locales", len(meta))
 }
 
+var (
+	validKeys = map[string]interface{}{
+		"currency_symbol":    nil,
+		"mon_decimal_point":  nil,
+		"mon_thousands_sep":  nil,
+		"mon_grouping":       nil,
+		"positive_sign":      nil,
+		"negative_sign":      nil,
+		"int_frac_digits":    nil,
+		"frac_digits":        nil,
+		"p_cs_precedes":      nil,
+		"p_sep_by_space":     nil,
+		"n_cs_precedes":      nil,
+		"n_sep_by_space":     nil,
+		"p_sign_posn":        nil,
+		"n_sign_posn":        nil,
+		"crncystr":           nil,
+		"int_p_cs_precedes":  nil,
+		"int_p_sep_by_space": nil,
+		"int_n_cs_precedes":  nil,
+		"int_n_sep_by_space": nil,
+		"int_p_sign_posn":    nil,
+		"int_n_sign_posn":    nil,
+	}
+)
+
 func GetMonetaryMetadata() map[string]map[string]interface{} {
 	if !monetary.LocaleSupported() {
 		panic("locales cannot be generated on this platform. locales must be generated on linux or darwin.")
@@ -63,6 +89,9 @@ func GetMonetaryMetadata() map[string]map[string]interface{} {
 			}
 			kv := bytes.Split(field, []byte("="))
 			key := string(kv[0])
+			if _, ok := validKeys[key]; !ok {
+				continue
+			}
 			val := kv[1]
 			if len(val) == 0 {
 				metaMap[item][key] = nil
