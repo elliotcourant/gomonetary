@@ -75,6 +75,7 @@ func GetMonetaryMetadata() map[string]map[string]interface{} {
 					groupVal := make([]int8, len(groups))
 					for i, group := range groups {
 						if g, err := strconv.ParseInt(string(group), 10, 8); err != nil {
+							golog.Errorf("%s", string(result))
 							panic(err)
 						} else {
 							groupVal[i] = int8(g)
@@ -86,6 +87,7 @@ func GetMonetaryMetadata() map[string]map[string]interface{} {
 				}
 			} else {
 				if v, err := strconv.ParseInt(string(val), 10, 32); err != nil {
+					golog.Errorf("%s", string(result))
 					panic(err)
 				} else {
 					metaMap[item][key] = int(v)
