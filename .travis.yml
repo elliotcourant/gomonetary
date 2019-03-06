@@ -21,8 +21,3 @@ matrix:
         - make coverage
       after_success:
         - bash <(curl -s https://codecov.io/bash)
-  allow_failures:
-    - os: windows
-      script:
-        - go get -t -v ./...
-        - go test -v ./...
