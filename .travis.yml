@@ -5,8 +5,7 @@ go:
 
 matrix:
   include:
-    - stage: Build, Generate & Test Metadata
-      os:
+    - os:
         - osx
         - linux
       install:
@@ -16,8 +15,7 @@ matrix:
         - make coverage
       after_success:
         - bash <(curl -s https://codecov.io/bash)
-    - stage: Test Metadata (Windows)
-      os: windows
+    - os: windows
       script:
         - go get -t -v ./...
         - go test -v ./...
