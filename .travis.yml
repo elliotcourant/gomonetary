@@ -5,9 +5,7 @@ go:
 
 matrix:
   include:
-    - os:
-        - osx
-        - linux
+    - os: osx
       install:
         - make dependencies
       script:
@@ -15,8 +13,7 @@ matrix:
         - make coverage
       after_success:
         - bash <(curl -s https://codecov.io/bash)
-    - os:
-        - linux
+    - os: linux
       install:
         - make dependencies
       script:
