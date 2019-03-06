@@ -188,10 +188,15 @@ var (
 	}
 	body := ""
 	names := ""
-	for locale, data := range meta {
+	var keys []string
+	for k := range meta {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	for _, locale := range keys {
 		names += fmt.Sprintf(`"%s",
 `, locale)
-		result := localeInfoFormatter(data)
+		result := localeInfoFormatter(meta[locale])
 		body += kvFormatter(locale, result)
 	}
 

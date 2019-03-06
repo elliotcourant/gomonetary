@@ -6,7 +6,12 @@ import (
 )
 
 func TestParseMoney(t *testing.T) {
-	russianLocale := metaData["ru_RU"]
-	result := parseMoney(russianLocale, `5,50 руб.`)
-	assert.Equal(t, 5.5, result)
+	t.Run("en_US", func(t *testing.T) {
+		result := parseMoney(metaData["en_US"], `$5.51`)
+		assert.Equal(t, 5.51, result)
+	})
+	t.Run("ru_RU", func(t *testing.T) {
+		result := parseMoney(metaData["ru_RU"], `5,54 руб.`)
+		assert.Equal(t, 5.54, result)
+	})
 }
