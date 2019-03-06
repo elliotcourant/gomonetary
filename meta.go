@@ -3,11 +3,11 @@ package monetary
 type localeInfo struct {
 	InternationalCurrencySymbol   string
 	CurrencySymbol                []byte
-	DecimalPoint                  string
-	ThousandsSeparator            string
+	DecimalPoint                  []byte
+	ThousandsSeparator            []byte
 	Grouping                      []int8
-	PositiveSign                  string
-	NegativeSign                  string
+	PositiveSign                  []byte
+	NegativeSign                  []byte
 	InternationalFractionalDigits uint8
 	FractionalDigits              uint8
 }

@@ -31,6 +31,7 @@ func main() {
 
 var (
 	validKeys = map[string]interface{}{
+		"int_curr_symbol":    nil,
 		"currency_symbol":    nil,
 		"mon_decimal_point":  nil,
 		"mon_thousands_sep":  nil,
@@ -157,13 +158,33 @@ var (
 		str := fmt.Sprintf("%+v", bytes.([]byte))
 		return fmt.Sprintf("[]byte{%s}", strings.Join(strings.Split(str[1:len(str)-1], " "), ", "))
 	}
+	tinyIntArrayFormatter := func(groups interface{}) string {
+		if groups == nil {
+			return "nil"
+		}
+		str := fmt.Sprintf("%+v", groups.([]int8))
+		return fmt.Sprintf("[]int8{%s}", strings.Join(strings.Split(str[1:len(str)-1], " "), ", "))
+	}
 	localeInfoFormatter := func(data map[string]interface{}) string {
 		return fmt.Sprintf(`{
 			InternationalCurrencySymbol: %s,
 			CurrencySymbol: %s,
+			DecimalPoint: %s,
+			ThousandsSeparator: %s,
+			Grouping: %s,
+			PositiveSign: %s,
+			NegativeSign: %s,
+			FractionalDigits: %d,
 		}`,
 			stringFormatter(data["int_curr_symbol"]),
-			bytesFormatter(data["currency_symbol"]))
+			bytesFormatter(data["currency_symbol"]),
+			bytesFormatter(data["mon_decimal_point"]),
+			bytesFormatter(data["mon_thousands_sep"]),
+			tinyIntArrayFormatter(data["mon_grouping"]),
+			bytesFormatter(data["positive_sign"]),
+			bytesFormatter(data["negative_sign"]),
+			data["frac_digits"],
+		)
 	}
 	body := ""
 	names := ""
