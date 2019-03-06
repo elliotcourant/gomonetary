@@ -13,8 +13,6 @@ metadata: generator
 
 tests:
 	go test -v ./...
-	make metadata
-	go test -v ./...
 
 coverage:
 	./coverage.sh
