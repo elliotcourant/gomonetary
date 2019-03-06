@@ -13,7 +13,6 @@ import (
 )
 
 var (
-	listLocalesCommand    = exec.Command("locale", "-a")
 	localeMonetaryCommand = `LC_MONETARY=%s locale -k LC_MONETARY`
 )
 
@@ -60,7 +59,7 @@ func GetMonetaryMetadata() map[string]map[string]interface{} {
 	if !monetary.LocaleSupported() {
 		panic("locales cannot be generated on this platform. locales must be generated on linux or darwin.")
 	}
-	list, err := listLocalesCommand.Output()
+	list, err := exec.Command("locale", "-a").Output()
 	if err != nil {
 		panic(err)
 	}
