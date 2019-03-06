@@ -1,18 +1,23 @@
 language: go
 
-os:
-  - windows
-  - linux
-  - osx
-
 go:
   - "1.11"
 
-install:
-  - make dependencies
-
-script:
-  - make coverage
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+jobs:
+  include:
+    - stage: Build, Generate & Test Metadata
+      os:
+        - osx
+        - linux
+      install:
+        - make dependencies
+      script:
+        - make tests
+        - make coverage
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
+    - stage: Test Metadata (Windows)
+      os: windows
+      script:
+        - go get -t -v ./...
+        - go test -v ./...

@@ -1,6 +1,6 @@
-.PHONY: default test dependencies generator metadata
+.PHONY: default tests dependencies generator metadata
 
-default: test
+default: tests
 
 dependencies:
 	go get -t -v ./...
@@ -11,7 +11,7 @@ generator:
 metadata: generator
 	./bin/lcgenerator
 
-test:
+tests:
 	go test -v ./...
 	make metadata
 	go test -v ./...
