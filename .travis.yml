@@ -8,3 +8,9 @@ go:
 
 install:
   - make dependencies
+
+script:
+  - make coverage
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

@@ -3,8 +3,7 @@
 default: test
 
 dependencies:
-	go get github.com/stretchr/testify/assert
-	go get github.com/kataras/golog
+	go get -t -v ./...
 
 generator:
 	go build -o bin/lcgenerator github.com/elliotcourant/gomonetary/lcgenerator
@@ -16,3 +15,6 @@ test:
 	go test -v ./...
 	make metadata
 	go test -v ./...
+
+coverage:
+	./coverage.sh
