@@ -207,7 +207,7 @@ var (
 		"zh_TW.UTF-8",
 	}
 	metaData = map[string]localeInfo{
-		"C": {
+		"c": {
 			InternationalCurrencySymbol: "",
 			CurrencySymbol:              nil,
 			DecimalPoint:                nil,
@@ -216,7 +216,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                nil,
 			FractionalDigits:            127,
-		}, "POSIX": {
+		}, "posix": {
 			InternationalCurrencySymbol: "",
 			CurrencySymbol:              nil,
 			DecimalPoint:                nil,
@@ -225,7 +225,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                nil,
 			FractionalDigits:            127,
-		}, "af_ZA": {
+		}, "af_za": {
 			InternationalCurrencySymbol: "ZAR",
 			CurrencySymbol:              []byte{82},
 			DecimalPoint:                []byte{44},
@@ -234,7 +234,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "af_ZA.ISO8859-1": {
+		}, "af_za.iso8859-1": {
 			InternationalCurrencySymbol: "ZAR",
 			CurrencySymbol:              []byte{82},
 			DecimalPoint:                []byte{44},
@@ -243,7 +243,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "af_ZA.ISO8859-15": {
+		}, "af_za.iso8859-15": {
 			InternationalCurrencySymbol: "ZAR",
 			CurrencySymbol:              []byte{82},
 			DecimalPoint:                []byte{44},
@@ -252,7 +252,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "af_ZA.UTF-8": {
+		}, "af_za.utf-8": {
 			InternationalCurrencySymbol: "ZAR",
 			CurrencySymbol:              []byte{82},
 			DecimalPoint:                []byte{44},
@@ -261,7 +261,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "am_ET": {
+		}, "am_et": {
 			InternationalCurrencySymbol: "ETB",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -270,7 +270,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "am_ET.UTF-8": {
+		}, "am_et.utf-8": {
 			InternationalCurrencySymbol: "ETB",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -279,7 +279,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "be_BY": {
+		}, "be_by": {
 			InternationalCurrencySymbol: "BYR",
 			CurrencySymbol:              []byte{209, 128, 209, 131, 208, 177, 46},
 			DecimalPoint:                []byte{44},
@@ -288,7 +288,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "be_BY.CP1131": {
+		}, "be_by.cp1131": {
 			InternationalCurrencySymbol: "BYR",
 			CurrencySymbol:              []byte{224, 227, 161, 46},
 			DecimalPoint:                []byte{44},
@@ -297,7 +297,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "be_BY.CP1251": {
+		}, "be_by.cp1251": {
 			InternationalCurrencySymbol: "BYR",
 			CurrencySymbol:              []byte{240, 243, 225, 46},
 			DecimalPoint:                []byte{44},
@@ -306,7 +306,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "be_BY.ISO8859-5": {
+		}, "be_by.iso8859-5": {
 			InternationalCurrencySymbol: "BYR",
 			CurrencySymbol:              []byte{224, 227, 209, 46},
 			DecimalPoint:                []byte{44},
@@ -315,7 +315,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "be_BY.UTF-8": {
+		}, "be_by.utf-8": {
 			InternationalCurrencySymbol: "BYR",
 			CurrencySymbol:              []byte{209, 128, 209, 131, 208, 177, 46},
 			DecimalPoint:                []byte{44},
@@ -324,7 +324,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "bg_BG": {
+		}, "bg_bg": {
 			InternationalCurrencySymbol: "BGN",
 			CurrencySymbol:              []byte{208, 187, 208, 178, 46},
 			DecimalPoint:                []byte{44},
@@ -333,7 +333,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "bg_BG.CP1251": {
+		}, "bg_bg.cp1251": {
 			InternationalCurrencySymbol: "BGN",
 			CurrencySymbol:              []byte{235, 226, 46},
 			DecimalPoint:                []byte{44},
@@ -342,7 +342,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "bg_BG.UTF-8": {
+		}, "bg_bg.utf-8": {
 			InternationalCurrencySymbol: "BGN",
 			CurrencySymbol:              []byte{208, 187, 208, 178, 46},
 			DecimalPoint:                []byte{44},
@@ -351,7 +351,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ca_ES": {
+		}, "ca_es": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -360,7 +360,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ca_ES.ISO8859-1": {
+		}, "ca_es.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -369,7 +369,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ca_ES.ISO8859-15": {
+		}, "ca_es.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -378,7 +378,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ca_ES.UTF-8": {
+		}, "ca_es.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -387,7 +387,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "cs_CZ": {
+		}, "cs_cz": {
 			InternationalCurrencySymbol: "CZK",
 			CurrencySymbol:              []byte{75, 196, 141},
 			DecimalPoint:                []byte{44},
@@ -396,7 +396,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "cs_CZ.ISO8859-2": {
+		}, "cs_cz.iso8859-2": {
 			InternationalCurrencySymbol: "CZK",
 			CurrencySymbol:              []byte{75, 232},
 			DecimalPoint:                []byte{44},
@@ -405,7 +405,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "cs_CZ.UTF-8": {
+		}, "cs_cz.utf-8": {
 			InternationalCurrencySymbol: "CZK",
 			CurrencySymbol:              []byte{75, 196, 141},
 			DecimalPoint:                []byte{44},
@@ -414,7 +414,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "da_DK": {
+		}, "da_dk": {
 			InternationalCurrencySymbol: "DKK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -423,7 +423,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "da_DK.ISO8859-1": {
+		}, "da_dk.iso8859-1": {
 			InternationalCurrencySymbol: "DKK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -432,7 +432,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "da_DK.ISO8859-15": {
+		}, "da_dk.iso8859-15": {
 			InternationalCurrencySymbol: "DKK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -441,7 +441,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "da_DK.UTF-8": {
+		}, "da_dk.utf-8": {
 			InternationalCurrencySymbol: "DKK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -450,7 +450,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_AT": {
+		}, "de_at": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -459,7 +459,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_AT.ISO8859-1": {
+		}, "de_at.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -468,7 +468,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_AT.ISO8859-15": {
+		}, "de_at.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -477,7 +477,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_AT.UTF-8": {
+		}, "de_at.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -486,7 +486,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_CH": {
+		}, "de_ch": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -495,7 +495,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_CH.ISO8859-1": {
+		}, "de_ch.iso8859-1": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -504,7 +504,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_CH.ISO8859-15": {
+		}, "de_ch.iso8859-15": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -513,7 +513,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_CH.UTF-8": {
+		}, "de_ch.utf-8": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -522,7 +522,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_DE": {
+		}, "de_de": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -531,7 +531,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_DE.ISO8859-1": {
+		}, "de_de.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -540,7 +540,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_DE.ISO8859-15": {
+		}, "de_de.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -549,7 +549,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "de_DE.UTF-8": {
+		}, "de_de.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -558,7 +558,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "el_GR": {
+		}, "el_gr": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -567,7 +567,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "el_GR.ISO8859-7": {
+		}, "el_gr.iso8859-7": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -576,7 +576,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "el_GR.UTF-8": {
+		}, "el_gr.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -585,7 +585,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_AU": {
+		}, "en_au": {
 			InternationalCurrencySymbol: "AUD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -594,7 +594,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_AU.ISO8859-1": {
+		}, "en_au.iso8859-1": {
 			InternationalCurrencySymbol: "AUD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -603,7 +603,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_AU.ISO8859-15": {
+		}, "en_au.iso8859-15": {
 			InternationalCurrencySymbol: "AUD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -612,7 +612,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_AU.US-ASCII": {
+		}, "en_au.us-ascii": {
 			InternationalCurrencySymbol: "AUD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -621,7 +621,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_AU.UTF-8": {
+		}, "en_au.utf-8": {
 			InternationalCurrencySymbol: "AUD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -630,7 +630,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_CA": {
+		}, "en_ca": {
 			InternationalCurrencySymbol: "CAD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -639,7 +639,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_CA.ISO8859-1": {
+		}, "en_ca.iso8859-1": {
 			InternationalCurrencySymbol: "CAD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -648,7 +648,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_CA.ISO8859-15": {
+		}, "en_ca.iso8859-15": {
 			InternationalCurrencySymbol: "CAD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -657,7 +657,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_CA.US-ASCII": {
+		}, "en_ca.us-ascii": {
 			InternationalCurrencySymbol: "CAD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -666,7 +666,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_CA.UTF-8": {
+		}, "en_ca.utf-8": {
 			InternationalCurrencySymbol: "CAD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -675,7 +675,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_GB": {
+		}, "en_gb": {
 			InternationalCurrencySymbol: "GBP",
 			CurrencySymbol:              []byte{194, 163},
 			DecimalPoint:                []byte{46},
@@ -684,7 +684,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_GB.ISO8859-1": {
+		}, "en_gb.iso8859-1": {
 			InternationalCurrencySymbol: "GBP",
 			CurrencySymbol:              []byte{163},
 			DecimalPoint:                []byte{46},
@@ -693,7 +693,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_GB.ISO8859-15": {
+		}, "en_gb.iso8859-15": {
 			InternationalCurrencySymbol: "GBP",
 			CurrencySymbol:              []byte{163},
 			DecimalPoint:                []byte{46},
@@ -702,7 +702,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_GB.US-ASCII": {
+		}, "en_gb.us-ascii": {
 			InternationalCurrencySymbol: "GBP",
 			CurrencySymbol:              []byte{163},
 			DecimalPoint:                []byte{46},
@@ -711,7 +711,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_GB.UTF-8": {
+		}, "en_gb.utf-8": {
 			InternationalCurrencySymbol: "GBP",
 			CurrencySymbol:              []byte{194, 163},
 			DecimalPoint:                []byte{46},
@@ -720,7 +720,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_IE": {
+		}, "en_ie": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{226, 130, 172},
 			DecimalPoint:                []byte{46},
@@ -729,7 +729,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_IE.UTF-8": {
+		}, "en_ie.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{226, 130, 172},
 			DecimalPoint:                []byte{46},
@@ -738,7 +738,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_NZ": {
+		}, "en_nz": {
 			InternationalCurrencySymbol: "NZD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -747,7 +747,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_NZ.ISO8859-1": {
+		}, "en_nz.iso8859-1": {
 			InternationalCurrencySymbol: "NZD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -756,7 +756,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_NZ.ISO8859-15": {
+		}, "en_nz.iso8859-15": {
 			InternationalCurrencySymbol: "NZD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -765,7 +765,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_NZ.US-ASCII": {
+		}, "en_nz.us-ascii": {
 			InternationalCurrencySymbol: "NZD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -774,7 +774,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_NZ.UTF-8": {
+		}, "en_nz.utf-8": {
 			InternationalCurrencySymbol: "NZD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -783,7 +783,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_US": {
+		}, "en_us": {
 			InternationalCurrencySymbol: "USD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -792,7 +792,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_US.ISO8859-1": {
+		}, "en_us.iso8859-1": {
 			InternationalCurrencySymbol: "USD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -801,7 +801,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_US.ISO8859-15": {
+		}, "en_us.iso8859-15": {
 			InternationalCurrencySymbol: "USD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -810,7 +810,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_US.US-ASCII": {
+		}, "en_us.us-ascii": {
 			InternationalCurrencySymbol: "USD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -819,7 +819,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "en_US.UTF-8": {
+		}, "en_us.utf-8": {
 			InternationalCurrencySymbol: "USD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{46},
@@ -828,7 +828,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "es_ES": {
+		}, "es_es": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -837,7 +837,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "es_ES.ISO8859-1": {
+		}, "es_es.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -846,7 +846,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "es_ES.ISO8859-15": {
+		}, "es_es.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -855,7 +855,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "es_ES.UTF-8": {
+		}, "es_es.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -864,7 +864,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "et_EE": {
+		}, "et_ee": {
 			InternationalCurrencySymbol: "EEK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{46},
@@ -873,7 +873,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "et_EE.ISO8859-15": {
+		}, "et_ee.iso8859-15": {
 			InternationalCurrencySymbol: "EEK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{46},
@@ -882,7 +882,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "et_EE.UTF-8": {
+		}, "et_ee.utf-8": {
 			InternationalCurrencySymbol: "EEK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{46},
@@ -891,7 +891,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "eu_ES": {
+		}, "eu_es": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -900,7 +900,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "eu_ES.ISO8859-1": {
+		}, "eu_es.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -909,7 +909,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "eu_ES.ISO8859-15": {
+		}, "eu_es.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -918,7 +918,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "eu_ES.UTF-8": {
+		}, "eu_es.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -927,7 +927,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fi_FI": {
+		}, "fi_fi": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -936,7 +936,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fi_FI.ISO8859-1": {
+		}, "fi_fi.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -945,7 +945,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fi_FI.ISO8859-15": {
+		}, "fi_fi.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -954,7 +954,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fi_FI.UTF-8": {
+		}, "fi_fi.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -963,7 +963,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_BE": {
+		}, "fr_be": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -972,7 +972,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_BE.ISO8859-1": {
+		}, "fr_be.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -981,7 +981,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_BE.ISO8859-15": {
+		}, "fr_be.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -990,7 +990,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_BE.UTF-8": {
+		}, "fr_be.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -999,7 +999,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_CA": {
+		}, "fr_ca": {
 			InternationalCurrencySymbol: "CAD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{44},
@@ -1008,7 +1008,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_CA.ISO8859-1": {
+		}, "fr_ca.iso8859-1": {
 			InternationalCurrencySymbol: "CAD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{44},
@@ -1017,7 +1017,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_CA.ISO8859-15": {
+		}, "fr_ca.iso8859-15": {
 			InternationalCurrencySymbol: "CAD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{44},
@@ -1026,7 +1026,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_CA.UTF-8": {
+		}, "fr_ca.utf-8": {
 			InternationalCurrencySymbol: "CAD",
 			CurrencySymbol:              []byte{36},
 			DecimalPoint:                []byte{44},
@@ -1035,7 +1035,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_CH": {
+		}, "fr_ch": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -1044,7 +1044,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_CH.ISO8859-1": {
+		}, "fr_ch.iso8859-1": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -1053,7 +1053,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_CH.ISO8859-15": {
+		}, "fr_ch.iso8859-15": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -1062,7 +1062,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_CH.UTF-8": {
+		}, "fr_ch.utf-8": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -1071,7 +1071,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_FR": {
+		}, "fr_fr": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1080,7 +1080,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_FR.ISO8859-1": {
+		}, "fr_fr.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1089,7 +1089,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_FR.ISO8859-15": {
+		}, "fr_fr.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1098,7 +1098,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "fr_FR.UTF-8": {
+		}, "fr_fr.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1107,7 +1107,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "he_IL": {
+		}, "he_il": {
 			InternationalCurrencySymbol: "ILS",
 			CurrencySymbol:              []byte{215, 169, 215, 151},
 			DecimalPoint:                []byte{46},
@@ -1116,7 +1116,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "he_IL.UTF-8": {
+		}, "he_il.utf-8": {
 			InternationalCurrencySymbol: "ILS",
 			CurrencySymbol:              []byte{215, 169, 215, 151},
 			DecimalPoint:                []byte{46},
@@ -1125,7 +1125,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hi_IN.ISCII-DEV": {
+		}, "hi_in.iscii-dev": {
 			InternationalCurrencySymbol: "INR",
 			CurrencySymbol:              []byte{207, 222, 200, 172},
 			DecimalPoint:                []byte{46},
@@ -1134,7 +1134,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hr_HR": {
+		}, "hr_hr": {
 			InternationalCurrencySymbol: "HRK",
 			CurrencySymbol:              []byte{75, 110},
 			DecimalPoint:                []byte{44},
@@ -1143,7 +1143,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hr_HR.ISO8859-2": {
+		}, "hr_hr.iso8859-2": {
 			InternationalCurrencySymbol: "HRK",
 			CurrencySymbol:              []byte{75, 110},
 			DecimalPoint:                []byte{44},
@@ -1152,7 +1152,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hr_HR.UTF-8": {
+		}, "hr_hr.utf-8": {
 			InternationalCurrencySymbol: "HRK",
 			CurrencySymbol:              []byte{75, 110},
 			DecimalPoint:                []byte{44},
@@ -1161,7 +1161,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hu_HU": {
+		}, "hu_hu": {
 			InternationalCurrencySymbol: "HUF",
 			CurrencySymbol:              []byte{70, 116},
 			DecimalPoint:                []byte{44},
@@ -1170,7 +1170,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hu_HU.ISO8859-2": {
+		}, "hu_hu.iso8859-2": {
 			InternationalCurrencySymbol: "HUF",
 			CurrencySymbol:              []byte{70, 116},
 			DecimalPoint:                []byte{44},
@@ -1179,7 +1179,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hu_HU.UTF-8": {
+		}, "hu_hu.utf-8": {
 			InternationalCurrencySymbol: "HUF",
 			CurrencySymbol:              []byte{70, 116},
 			DecimalPoint:                []byte{44},
@@ -1188,7 +1188,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hy_AM": {
+		}, "hy_am": {
 			InternationalCurrencySymbol: "AMD",
 			CurrencySymbol:              []byte{212, 180, 213, 144},
 			DecimalPoint:                []byte{46},
@@ -1197,7 +1197,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hy_AM.ARMSCII-8": {
+		}, "hy_am.armscii-8": {
 			InternationalCurrencySymbol: "AMD",
 			CurrencySymbol:              []byte{184, 240},
 			DecimalPoint:                []byte{46},
@@ -1206,7 +1206,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "hy_AM.UTF-8": {
+		}, "hy_am.utf-8": {
 			InternationalCurrencySymbol: "AMD",
 			CurrencySymbol:              []byte{212, 180, 213, 144},
 			DecimalPoint:                []byte{46},
@@ -1215,7 +1215,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "is_IS": {
+		}, "is_is": {
 			InternationalCurrencySymbol: "ISK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1224,7 +1224,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "is_IS.ISO8859-1": {
+		}, "is_is.iso8859-1": {
 			InternationalCurrencySymbol: "ISK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1233,7 +1233,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "is_IS.ISO8859-15": {
+		}, "is_is.iso8859-15": {
 			InternationalCurrencySymbol: "ISK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1242,7 +1242,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "is_IS.UTF-8": {
+		}, "is_is.utf-8": {
 			InternationalCurrencySymbol: "ISK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1251,7 +1251,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "it_CH": {
+		}, "it_ch": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -1260,7 +1260,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "it_CH.ISO8859-1": {
+		}, "it_ch.iso8859-1": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -1269,7 +1269,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "it_CH.ISO8859-15": {
+		}, "it_ch.iso8859-15": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -1278,7 +1278,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "it_CH.UTF-8": {
+		}, "it_ch.utf-8": {
 			InternationalCurrencySymbol: "CHF",
 			CurrencySymbol:              []byte{70, 114, 46},
 			DecimalPoint:                []byte{44},
@@ -1287,7 +1287,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "it_IT": {
+		}, "it_it": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1296,7 +1296,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "it_IT.ISO8859-1": {
+		}, "it_it.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1305,7 +1305,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "it_IT.ISO8859-15": {
+		}, "it_it.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1314,7 +1314,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "it_IT.UTF-8": {
+		}, "it_it.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1323,7 +1323,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ja_JP": {
+		}, "ja_jp": {
 			InternationalCurrencySymbol: "JPY",
 			CurrencySymbol:              []byte{194, 165},
 			DecimalPoint:                []byte{46},
@@ -1332,7 +1332,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "ja_JP.SJIS": {
+		}, "ja_jp.sjis": {
 			InternationalCurrencySymbol: "JPY",
 			CurrencySymbol:              []byte{92},
 			DecimalPoint:                []byte{46},
@@ -1341,7 +1341,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "ja_JP.UTF-8": {
+		}, "ja_jp.utf-8": {
 			InternationalCurrencySymbol: "JPY",
 			CurrencySymbol:              []byte{194, 165},
 			DecimalPoint:                []byte{46},
@@ -1350,7 +1350,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "ja_JP.eucJP": {
+		}, "ja_jp.eucjp": {
 			InternationalCurrencySymbol: "JPY",
 			CurrencySymbol:              []byte{92},
 			DecimalPoint:                []byte{46},
@@ -1359,7 +1359,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "kk_KZ": {
+		}, "kk_kz": {
 			InternationalCurrencySymbol: "KZT",
 			CurrencySymbol:              []byte{209, 130, 208, 179, 46},
 			DecimalPoint:                []byte{44},
@@ -1368,7 +1368,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "kk_KZ.PT154": {
+		}, "kk_kz.pt154": {
 			InternationalCurrencySymbol: "KZT",
 			CurrencySymbol:              []byte{242, 227, 46},
 			DecimalPoint:                []byte{44},
@@ -1377,7 +1377,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "kk_KZ.UTF-8": {
+		}, "kk_kz.utf-8": {
 			InternationalCurrencySymbol: "KZT",
 			CurrencySymbol:              []byte{209, 130, 208, 179, 46},
 			DecimalPoint:                []byte{44},
@@ -1386,7 +1386,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ko_KR": {
+		}, "ko_kr": {
 			InternationalCurrencySymbol: "KRW",
 			CurrencySymbol:              []byte{226, 130, 169},
 			DecimalPoint:                []byte{46},
@@ -1395,7 +1395,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "ko_KR.CP949": {
+		}, "ko_kr.cp949": {
 			InternationalCurrencySymbol: "KRW",
 			CurrencySymbol:              []byte{92},
 			DecimalPoint:                []byte{46},
@@ -1404,7 +1404,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "ko_KR.UTF-8": {
+		}, "ko_kr.utf-8": {
 			InternationalCurrencySymbol: "KRW",
 			CurrencySymbol:              []byte{226, 130, 169},
 			DecimalPoint:                []byte{46},
@@ -1413,7 +1413,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "ko_KR.eucKR": {
+		}, "ko_kr.euckr": {
 			InternationalCurrencySymbol: "KRW",
 			CurrencySymbol:              []byte{92},
 			DecimalPoint:                []byte{46},
@@ -1422,7 +1422,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            0,
-		}, "lt_LT": {
+		}, "lt_lt": {
 			InternationalCurrencySymbol: "LTL",
 			CurrencySymbol:              []byte{76, 116},
 			DecimalPoint:                []byte{44},
@@ -1431,7 +1431,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "lt_LT.ISO8859-13": {
+		}, "lt_lt.iso8859-13": {
 			InternationalCurrencySymbol: "LTL",
 			CurrencySymbol:              []byte{76, 116},
 			DecimalPoint:                []byte{44},
@@ -1440,7 +1440,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "lt_LT.ISO8859-4": {
+		}, "lt_lt.iso8859-4": {
 			InternationalCurrencySymbol: "LTL",
 			CurrencySymbol:              []byte{76, 116},
 			DecimalPoint:                []byte{44},
@@ -1449,7 +1449,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "lt_LT.UTF-8": {
+		}, "lt_lt.utf-8": {
 			InternationalCurrencySymbol: "LTL",
 			CurrencySymbol:              []byte{76, 116},
 			DecimalPoint:                []byte{44},
@@ -1458,7 +1458,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "nl_BE": {
+		}, "nl_be": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1467,7 +1467,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "nl_BE.ISO8859-1": {
+		}, "nl_be.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1476,7 +1476,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "nl_BE.ISO8859-15": {
+		}, "nl_be.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1485,7 +1485,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "nl_BE.UTF-8": {
+		}, "nl_be.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1494,16 +1494,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "nl_NL": {
-			InternationalCurrencySymbol: "EUR",
-			CurrencySymbol:              []byte{69, 117},
-			DecimalPoint:                []byte{44},
-			ThousandsSeparator:          []byte{},
-			Grouping:                    []int8{3, 3},
-			PositiveSign:                nil,
-			NegativeSign:                []byte{45},
-			FractionalDigits:            2,
-		}, "nl_NL.ISO8859-1": {
+		}, "nl_nl": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1512,7 +1503,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "nl_NL.ISO8859-15": {
+		}, "nl_nl.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1521,7 +1512,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "nl_NL.UTF-8": {
+		}, "nl_nl.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{44},
@@ -1530,7 +1521,16 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "no_NO": {
+		}, "nl_nl.utf-8": {
+			InternationalCurrencySymbol: "EUR",
+			CurrencySymbol:              []byte{69, 117},
+			DecimalPoint:                []byte{44},
+			ThousandsSeparator:          []byte{},
+			Grouping:                    []int8{3, 3},
+			PositiveSign:                nil,
+			NegativeSign:                []byte{45},
+			FractionalDigits:            2,
+		}, "no_no": {
 			InternationalCurrencySymbol: "NOK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1539,7 +1539,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "no_NO.ISO8859-1": {
+		}, "no_no.iso8859-1": {
 			InternationalCurrencySymbol: "NOK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1548,7 +1548,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "no_NO.ISO8859-15": {
+		}, "no_no.iso8859-15": {
 			InternationalCurrencySymbol: "NOK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1557,7 +1557,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "no_NO.UTF-8": {
+		}, "no_no.utf-8": {
 			InternationalCurrencySymbol: "NOK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1566,7 +1566,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pl_PL": {
+		}, "pl_pl": {
 			InternationalCurrencySymbol: "PLN",
 			CurrencySymbol:              []byte{122, 197, 130},
 			DecimalPoint:                []byte{44},
@@ -1575,7 +1575,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pl_PL.ISO8859-2": {
+		}, "pl_pl.iso8859-2": {
 			InternationalCurrencySymbol: "PLN",
 			CurrencySymbol:              []byte{122, 179},
 			DecimalPoint:                []byte{44},
@@ -1584,7 +1584,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pl_PL.UTF-8": {
+		}, "pl_pl.utf-8": {
 			InternationalCurrencySymbol: "PLN",
 			CurrencySymbol:              []byte{122, 197, 130},
 			DecimalPoint:                []byte{44},
@@ -1593,7 +1593,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pt_BR": {
+		}, "pt_br": {
 			InternationalCurrencySymbol: "BRL",
 			CurrencySymbol:              []byte{82, 36},
 			DecimalPoint:                []byte{44},
@@ -1602,7 +1602,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pt_BR.ISO8859-1": {
+		}, "pt_br.iso8859-1": {
 			InternationalCurrencySymbol: "BRL",
 			CurrencySymbol:              []byte{82, 36},
 			DecimalPoint:                []byte{44},
@@ -1611,7 +1611,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pt_BR.UTF-8": {
+		}, "pt_br.utf-8": {
 			InternationalCurrencySymbol: "BRL",
 			CurrencySymbol:              []byte{82, 36},
 			DecimalPoint:                []byte{44},
@@ -1620,7 +1620,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pt_PT": {
+		}, "pt_pt": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{46},
@@ -1629,7 +1629,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pt_PT.ISO8859-1": {
+		}, "pt_pt.iso8859-1": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{46},
@@ -1638,7 +1638,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pt_PT.ISO8859-15": {
+		}, "pt_pt.iso8859-15": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{46},
@@ -1647,7 +1647,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "pt_PT.UTF-8": {
+		}, "pt_pt.utf-8": {
 			InternationalCurrencySymbol: "EUR",
 			CurrencySymbol:              []byte{69, 117},
 			DecimalPoint:                []byte{46},
@@ -1656,7 +1656,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ro_RO": {
+		}, "ro_ro": {
 			InternationalCurrencySymbol: "ROL",
 			CurrencySymbol:              []byte{76, 101, 105},
 			DecimalPoint:                []byte{44},
@@ -1665,7 +1665,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ro_RO.ISO8859-2": {
+		}, "ro_ro.iso8859-2": {
 			InternationalCurrencySymbol: "ROL",
 			CurrencySymbol:              []byte{76, 101, 105},
 			DecimalPoint:                []byte{44},
@@ -1674,7 +1674,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ro_RO.UTF-8": {
+		}, "ro_ro.utf-8": {
 			InternationalCurrencySymbol: "ROL",
 			CurrencySymbol:              []byte{76, 101, 105},
 			DecimalPoint:                []byte{44},
@@ -1683,7 +1683,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ru_RU": {
+		}, "ru_ru": {
 			InternationalCurrencySymbol: "RUB",
 			CurrencySymbol:              []byte{209, 128, 209, 131, 208, 177, 46},
 			DecimalPoint:                []byte{44},
@@ -1692,7 +1692,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ru_RU.CP1251": {
+		}, "ru_ru.cp1251": {
 			InternationalCurrencySymbol: "RUB",
 			CurrencySymbol:              []byte{240, 243, 225, 46},
 			DecimalPoint:                []byte{44},
@@ -1701,7 +1701,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ru_RU.CP866": {
+		}, "ru_ru.cp866": {
 			InternationalCurrencySymbol: "RUB",
 			CurrencySymbol:              []byte{224, 227, 161, 46},
 			DecimalPoint:                []byte{44},
@@ -1710,7 +1710,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ru_RU.ISO8859-5": {
+		}, "ru_ru.iso8859-5": {
 			InternationalCurrencySymbol: "RUB",
 			CurrencySymbol:              []byte{224, 227, 209, 46},
 			DecimalPoint:                []byte{44},
@@ -1719,7 +1719,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ru_RU.KOI8-R": {
+		}, "ru_ru.koi8-r": {
 			InternationalCurrencySymbol: "RUB",
 			CurrencySymbol:              []byte{210, 213, 194, 46},
 			DecimalPoint:                []byte{44},
@@ -1728,7 +1728,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "ru_RU.UTF-8": {
+		}, "ru_ru.utf-8": {
 			InternationalCurrencySymbol: "RUB",
 			CurrencySymbol:              []byte{209, 128, 209, 131, 208, 177, 46},
 			DecimalPoint:                []byte{44},
@@ -1737,7 +1737,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sk_SK": {
+		}, "sk_sk": {
 			InternationalCurrencySymbol: "SKK",
 			CurrencySymbol:              []byte{83, 107},
 			DecimalPoint:                []byte{44},
@@ -1746,7 +1746,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sk_SK.ISO8859-2": {
+		}, "sk_sk.iso8859-2": {
 			InternationalCurrencySymbol: "SKK",
 			CurrencySymbol:              []byte{83, 107},
 			DecimalPoint:                []byte{44},
@@ -1755,7 +1755,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sk_SK.UTF-8": {
+		}, "sk_sk.utf-8": {
 			InternationalCurrencySymbol: "SKK",
 			CurrencySymbol:              []byte{83, 107},
 			DecimalPoint:                []byte{44},
@@ -1764,7 +1764,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sl_SI": {
+		}, "sl_si": {
 			InternationalCurrencySymbol: "SIT",
 			CurrencySymbol:              []byte{83, 73, 84},
 			DecimalPoint:                []byte{44},
@@ -1773,7 +1773,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sl_SI.ISO8859-2": {
+		}, "sl_si.iso8859-2": {
 			InternationalCurrencySymbol: "SIT",
 			CurrencySymbol:              []byte{83, 73, 84},
 			DecimalPoint:                []byte{44},
@@ -1782,7 +1782,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sl_SI.UTF-8": {
+		}, "sl_si.utf-8": {
 			InternationalCurrencySymbol: "SIT",
 			CurrencySymbol:              []byte{83, 73, 84},
 			DecimalPoint:                []byte{44},
@@ -1791,7 +1791,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sr_YU": {
+		}, "sr_yu": {
 			InternationalCurrencySymbol: "YUD",
 			CurrencySymbol:              []byte{100, 105, 110},
 			DecimalPoint:                []byte{44},
@@ -1800,7 +1800,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sr_YU.ISO8859-2": {
+		}, "sr_yu.iso8859-2": {
 			InternationalCurrencySymbol: "YUD",
 			CurrencySymbol:              []byte{100, 105, 110},
 			DecimalPoint:                []byte{44},
@@ -1809,7 +1809,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sr_YU.ISO8859-5": {
+		}, "sr_yu.iso8859-5": {
 			InternationalCurrencySymbol: "YUD",
 			CurrencySymbol:              []byte{212, 216, 221},
 			DecimalPoint:                []byte{44},
@@ -1818,7 +1818,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sr_YU.UTF-8": {
+		}, "sr_yu.utf-8": {
 			InternationalCurrencySymbol: "YUD",
 			CurrencySymbol:              []byte{100, 105, 110},
 			DecimalPoint:                []byte{44},
@@ -1827,7 +1827,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sv_SE": {
+		}, "sv_se": {
 			InternationalCurrencySymbol: "SEK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1836,7 +1836,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sv_SE.ISO8859-1": {
+		}, "sv_se.iso8859-1": {
 			InternationalCurrencySymbol: "SEK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1845,7 +1845,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sv_SE.ISO8859-15": {
+		}, "sv_se.iso8859-15": {
 			InternationalCurrencySymbol: "SEK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1854,7 +1854,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "sv_SE.UTF-8": {
+		}, "sv_se.utf-8": {
 			InternationalCurrencySymbol: "SEK",
 			CurrencySymbol:              []byte{107, 114},
 			DecimalPoint:                []byte{44},
@@ -1863,7 +1863,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "tr_TR": {
+		}, "tr_tr": {
 			InternationalCurrencySymbol: "TRL",
 			CurrencySymbol:              []byte{76},
 			DecimalPoint:                []byte{44},
@@ -1872,7 +1872,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "tr_TR.ISO8859-9": {
+		}, "tr_tr.iso8859-9": {
 			InternationalCurrencySymbol: "TRL",
 			CurrencySymbol:              []byte{76},
 			DecimalPoint:                []byte{44},
@@ -1881,7 +1881,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "tr_TR.UTF-8": {
+		}, "tr_tr.utf-8": {
 			InternationalCurrencySymbol: "TRL",
 			CurrencySymbol:              []byte{76},
 			DecimalPoint:                []byte{44},
@@ -1890,7 +1890,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "uk_UA": {
+		}, "uk_ua": {
 			InternationalCurrencySymbol: "UAH",
 			CurrencySymbol:              []byte{208, 179, 209, 128, 208, 189, 46},
 			DecimalPoint:                []byte{44},
@@ -1899,7 +1899,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "uk_UA.ISO8859-5": {
+		}, "uk_ua.iso8859-5": {
 			InternationalCurrencySymbol: "UAH",
 			CurrencySymbol:              []byte{211, 224, 221, 46},
 			DecimalPoint:                []byte{44},
@@ -1908,7 +1908,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "uk_UA.KOI8-U": {
+		}, "uk_ua.koi8-u": {
 			InternationalCurrencySymbol: "UAH",
 			CurrencySymbol:              []byte{199, 210, 206, 46},
 			DecimalPoint:                []byte{44},
@@ -1917,7 +1917,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "uk_UA.UTF-8": {
+		}, "uk_ua.utf-8": {
 			InternationalCurrencySymbol: "UAH",
 			CurrencySymbol:              []byte{208, 179, 209, 128, 208, 189, 46},
 			DecimalPoint:                []byte{44},
@@ -1926,7 +1926,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_CN": {
+		}, "zh_cn": {
 			InternationalCurrencySymbol: "CNY",
 			CurrencySymbol:              []byte{239, 191, 165},
 			DecimalPoint:                []byte{46},
@@ -1935,7 +1935,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_CN.GB18030": {
+		}, "zh_cn.gb18030": {
 			InternationalCurrencySymbol: "CNY",
 			CurrencySymbol:              []byte{163, 164},
 			DecimalPoint:                []byte{46},
@@ -1944,7 +1944,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_CN.GB2312": {
+		}, "zh_cn.gb2312": {
 			InternationalCurrencySymbol: "CNY",
 			CurrencySymbol:              []byte{163, 164},
 			DecimalPoint:                []byte{46},
@@ -1953,7 +1953,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_CN.GBK": {
+		}, "zh_cn.gbk": {
 			InternationalCurrencySymbol: "CNY",
 			CurrencySymbol:              []byte{163, 164},
 			DecimalPoint:                []byte{46},
@@ -1962,7 +1962,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_CN.UTF-8": {
+		}, "zh_cn.utf-8": {
 			InternationalCurrencySymbol: "CNY",
 			CurrencySymbol:              []byte{239, 191, 165},
 			DecimalPoint:                []byte{46},
@@ -1971,7 +1971,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_CN.eucCN": {
+		}, "zh_cn.euccn": {
 			InternationalCurrencySymbol: "CNY",
 			CurrencySymbol:              []byte{163, 164},
 			DecimalPoint:                []byte{46},
@@ -1980,7 +1980,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_HK": {
+		}, "zh_hk": {
 			InternationalCurrencySymbol: "HKD",
 			CurrencySymbol:              []byte{72, 75, 36},
 			DecimalPoint:                []byte{46},
@@ -1989,7 +1989,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_HK.Big5HKSCS": {
+		}, "zh_hk.big5hkscs": {
 			InternationalCurrencySymbol: "HKD",
 			CurrencySymbol:              []byte{72, 75, 36},
 			DecimalPoint:                []byte{46},
@@ -1998,7 +1998,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_HK.UTF-8": {
+		}, "zh_hk.utf-8": {
 			InternationalCurrencySymbol: "HKD",
 			CurrencySymbol:              []byte{72, 75, 36},
 			DecimalPoint:                []byte{46},
@@ -2007,7 +2007,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_TW": {
+		}, "zh_tw": {
 			InternationalCurrencySymbol: "TWD",
 			CurrencySymbol:              []byte{78, 84, 36},
 			DecimalPoint:                []byte{46},
@@ -2016,7 +2016,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_TW.Big5": {
+		}, "zh_tw.big5": {
 			InternationalCurrencySymbol: "TWD",
 			CurrencySymbol:              []byte{78, 84, 36},
 			DecimalPoint:                []byte{46},
@@ -2025,7 +2025,7 @@ var (
 			PositiveSign:                nil,
 			NegativeSign:                []byte{45},
 			FractionalDigits:            2,
-		}, "zh_TW.UTF-8": {
+		}, "zh_tw.utf-8": {
 			InternationalCurrencySymbol: "TWD",
 			CurrencySymbol:              []byte{78, 84, 36},
 			DecimalPoint:                []byte{46},

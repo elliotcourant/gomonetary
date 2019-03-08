@@ -143,7 +143,7 @@ var (
 	}
 )`
 	kvFormatter := func(key, value string) string {
-		return fmt.Sprintf(`"%s": %s,`, key, value)
+		return fmt.Sprintf(`"%s": %s,`, strings.ToLower(key), value)
 	}
 	stringFormatter := func(str interface{}) string {
 		if str == nil {

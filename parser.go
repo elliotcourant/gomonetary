@@ -149,6 +149,7 @@ func parseMoney(locale localeInfo, input string) (float64, error) {
 	 * trailing sign, and/or trailing currency symbol
 	 */
 	for ; len(s) > 0 && unicode.IsDigit(rune(s[0])); s = s[1:] {
+		// All this loop does is consume the trailing digits.
 	}
 
 	for len(s) > 0 {
@@ -157,8 +158,8 @@ func parseMoney(locale localeInfo, input string) (float64, error) {
 		} else if strings.HasPrefix(s, nsymbol) {
 			sgn = -1
 			s = strings.TrimPrefix(s, nsymbol)
-		} else if strings.HasPrefix(s, psymbol) {
-			s = strings.TrimPrefix(s, csymbol)
+		} else if len(psymbol) > 0 && strings.HasPrefix(s, psymbol) {
+			s = strings.TrimPrefix(s, psymbol)
 		} else if strings.HasPrefix(s, csymbol) {
 			s = strings.TrimPrefix(s, csymbol)
 		} else {
