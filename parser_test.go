@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestParseMoney(t *testing.T) {
+func TestParseMoneySimple(t *testing.T) {
 	t.Run("C", func(t *testing.T) {
 		result := parseMoney(metaData["C"], `5.51`)
 		assert.Equal(t, 5.51, result)
