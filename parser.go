@@ -1,23 +1,13 @@
 package monetary
 
-import "C"
 import (
 	"fmt"
+	"math"
 	"strings"
 	"unicode"
 )
 
-func pg_mul_s64_overflow(a int64, b int64, result *int64) (overflow bool) {
-	*result = a * b
-	return false
-}
-
-func pg_sub_s64_overflow(a int64, b int64, result *int64) (overflow bool) {
-	*result = a - b
-	return false
-}
-
-func parseMoney(locale localeInfo, input string) float64 {
+func parseMoney(locale localeInfo, input string) (float64, error) {
 	var result float64
 	var value int64 = 0
 	var dec int64 = 0
@@ -123,9 +113,9 @@ func parseMoney(locale localeInfo, input string) float64 {
 		if unicode.IsDigit(c) && (!seenDot || dec < fpoint) {
 			digit := c - '0'
 
-			if pg_mul_s64_overflow(value, 10, &value) ||
-				pg_sub_s64_overflow(value, int64(int8(digit)), &value) {
-				panic(fmt.Sprintf(`value "%s" is out of range for type %s`, input, "money"))
+			if multiplyOverflow(value, 10, &value) ||
+				subtractOverflow(value, int64(int8(digit)), &value) {
+				return 0, fmt.Errorf(`value "%s" is out of range for type %s`, input, "money")
 			}
 
 			if seenDot {
@@ -142,15 +132,15 @@ func parseMoney(locale localeInfo, input string) float64 {
 
 	// ADD ROUNDING HERE
 	if len(s) > 0 && unicode.IsDigit(rune(s[0])) && rune(s[0]) > '5' {
-		if pg_sub_s64_overflow(value, 1, &value) {
-			panic(fmt.Sprintf(`value "%s" is out of range for type %s`, input, "money"))
+		if subtractOverflow(value, 1, &value) {
+			return 0, fmt.Errorf(`value "%s" is out of range for type %s`, input, "money")
 		}
 	}
 
 	/* adjust for less than required decimal places */
 	for ; dec < fpoint; dec++ {
-		if pg_mul_s64_overflow(value, 10, &value) {
-			panic(fmt.Sprintf(`value "%s" is out of range for type %s`, input, "money"))
+		if multiplyOverflow(value, 10, &value) {
+			return 0, fmt.Errorf(`value "%s" is out of range for type %s`, input, "money")
 		}
 	}
 
@@ -172,7 +162,7 @@ func parseMoney(locale localeInfo, input string) float64 {
 		} else if strings.HasPrefix(s, csymbol) {
 			s = strings.TrimPrefix(s, csymbol)
 		} else {
-			panic(fmt.Sprintf(`invalid input syntax for type %s: "%s"`, "money", input))
+			return 0, fmt.Errorf(`invalid input syntax for type %s: "%s"`, "money", input)
 		}
 	}
 
@@ -181,13 +171,13 @@ func parseMoney(locale localeInfo, input string) float64 {
 	 * the most negative number.
 	 */
 	if sgn > 0 {
-		if value == -0x7FFFFFFFFFFFFFFF {
-			panic(fmt.Sprintf(`value "%s" is out of range for type %s`, input, "money"))
+		if value == math.MinInt64 {
+			return 0, fmt.Errorf(`value "%s" is out of range for type %s`, input, "money")
 		}
 		result = float64(-value)
 	} else {
 		result = float64(value)
 	}
 
-	return result / 100
+	return result / 100, nil
 }
