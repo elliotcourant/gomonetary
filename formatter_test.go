@@ -29,18 +29,27 @@ func TestFormatter(t *testing.T) {
 		t.Run(fmt.Sprintf("Locale:%s", name), func(t *testing.T) {
 			var result string
 			locale := metaData[strings.ToLower(string(name))]
-			input := 1234.12
-			t.Run("Format", func(t *testing.T) {
-				res, err := formatMoney(locale, input)
-				assert.NoError(t, err)
-				assert.NotEmpty(t, res)
-				result = res
-			})
-			t.Run("Parse", func(t *testing.T) {
-				parsed, err := parseMoney(locale, result)
-				assert.NoError(t, err, "[%s] failed", locale.Locale)
-				assert.Equal(t, input, parsed, "[%s] does not match", locale.Locale)
-			})
+			input := 0.0
+			for i := 0; i < 2; i++ {
+				name := "Positive"
+				if input = 123459687.12; i == 1 {
+					input = -input
+					name = "Negative"
+				}
+				t.Run(name, func(t *testing.T) {
+					t.Run("Format", func(t *testing.T) {
+						res, err := formatMoney(locale, input)
+						assert.NoError(t, err)
+						assert.NotEmpty(t, res)
+						result = res
+					})
+					t.Run("Parse", func(t *testing.T) {
+						parsed, err := parseMoney(locale, result)
+						assert.NoError(t, err, "[%s] failed", locale.Locale)
+						assert.Equal(t, input, parsed, "[%s] does not match", locale.Locale)
+					})
+				})
+			}
 		})
 	}
 }
