@@ -47,7 +47,7 @@ func main() {
 
 ## Cache
 
-Monetary information for each locale is cached, this allows for better
+Monetary information for each locale is cached ([generated.go](generated.go) - cache file), this allows for better
 performance but also guarantees support for all OS's for using the
 package.
 
