@@ -8,7 +8,44 @@ currency text. Given a locale it can take a float and format
 it according to that locale. It can also take a formatted
 string from a locale and parse it into a float.
 
-### Cache
+## Examples
+
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/elliotcourant/gomonetary"
+)
+
+func main() {
+	/*
+                        Formatting
+	*/
+	usDollars, _ := monetary.Format(123.56, "en_US")
+	fmt.Println("Formatted Value:", usDollars)
+	// Output: Formatted Value: $123.56
+
+	ruExample, _ := monetary.Format(5438.98, "ru_RU")
+	fmt.Println("Formatted Value:", ruExample)
+	// Output: Formatted Value: 5.438,98 руб.
+
+
+
+	/*
+                        Parsing
+	*/
+	usParsed, _ := monetary.Parse(usDollars, "en_US")
+	fmt.Println("Parsed Value:", usParsed)
+	// Output: Parsed Value: 123.56
+
+	ruParsed, _ := monetary.Parse(ruExample, "ru_RU")
+	fmt.Println("Parsed Value:", ruParsed)
+	// Output: Parsed Value: 5438.98
+}
+```
+
+## Cache
 
 Monetary information for each locale is cached, this allows for better
 performance but also guarantees support for all OS's for using the

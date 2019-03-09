@@ -40,24 +40,24 @@ func formatMoney(locale localeInfo, input float64) (string, error) {
 	if locale.DecimalPoint != 0 {
 		decimalSymbol = locale.DecimalPoint
 	} else {
-		decimalSymbol = Decimal[0]
+		decimalSymbol = decimal[0]
 	}
 
 	if locale.ThousandsSeparator != nil &&
 		len(locale.ThousandsSeparator) > 0 &&
 		!sliceEquals([]byte{decimalSymbol}, locale.ThousandsSeparator) {
 		thousandsSymbol = locale.ThousandsSeparator
-	} else if sliceEquals([]byte{decimalSymbol}, Comma) {
-		thousandsSymbol = Decimal
+	} else if sliceEquals([]byte{decimalSymbol}, comma) {
+		thousandsSymbol = decimal
 	} else {
-		thousandsSymbol = Comma
+		thousandsSymbol = comma
 	}
 
 	if locale.CurrencySymbol != nil &&
 		len(locale.CurrencySymbol) > 0 {
 		currencySymbol = locale.CurrencySymbol
 	} else {
-		currencySymbol = Dollar
+		currencySymbol = dollar
 	}
 
 	if value < 0 {
@@ -69,7 +69,7 @@ func formatMoney(locale localeInfo, input float64) (string, error) {
 			len(locale.NegativeSign) > 0 {
 			signSymbol = locale.NegativeSign
 		} else {
-			signSymbol = Negative
+			signSymbol = negative
 		}
 		signPosition = locale.NegativeSignPosition
 		currencySymbolPrecedes = locale.NegativeCurrencySymbolPrecedes

@@ -2,7 +2,7 @@
 package monetary
 
 var (
-	localeNames = LocaleNames{
+	localeNames = []string{
 		"C",
 		"POSIX",
 		"af_ZA",

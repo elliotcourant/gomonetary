@@ -4,11 +4,7 @@ import (
 	"strings"
 )
 
-type LocaleName string
-
-type LocaleNames []LocaleName
-
-func GetSupportedLocales() LocaleNames {
+func GetSupportedLocales() []string {
 	return localeNames
 }
 
