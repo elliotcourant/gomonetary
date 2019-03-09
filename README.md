@@ -65,3 +65,10 @@ This will replace the current cache (I will make it additive in the future)
 with all of the locale information on your system. Note: On Linux you might
 need to add other locales because they are not typically included be default.
 Mac OS usually has a couple hundred installed by default.
+
+### Benchmarks
+
+```
+BenchmarkFormat-8   	    1000000	      1679 ns/op	     408 B/op	      29 allocs/op
+BenchmarkParse-8   	    5000000	       345 ns/op	      10 B/op	       2 allocs/op
+```

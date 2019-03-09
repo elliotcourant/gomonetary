@@ -53,3 +53,17 @@ func TestFormatter(t *testing.T) {
 		})
 	}
 }
+
+func BenchmarkFormat(b *testing.B) {
+	b.ReportAllocs()
+	for i := 0; i < b.N; i++ {
+		Format(12324.43, "ru_RU")
+	}
+}
+
+func BenchmarkParse(b *testing.B) {
+	b.ReportAllocs()
+	for i := 0; i < b.N; i++ {
+		Parse("5.438,98 руб.", "ru_RU")
+	}
+}
