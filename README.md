@@ -66,8 +66,10 @@ with all of the locale information on your system. Note: On Linux you might
 need to add other locales because they are not typically included be default.
 Mac OS usually has a couple hundred installed by default.
 
-### Benchmarks
+## Benchmarks
+These were run on a 2017 MacBook Pro with a 2.8GHz Intel Core i7 running macOS 10.14.3.
 
+As you can see the format function still needs some optimizations.
 ```
 BenchmarkFormat-8   	    1000000	      1679 ns/op	     408 B/op	      29 allocs/op
 BenchmarkParse-8   	    5000000	       345 ns/op	      10 B/op	       2 allocs/op
