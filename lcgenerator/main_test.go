@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/elliotcourant/gomonetary"
+	"github.com/elliotcourant/gomonetary/lcgenerator/support"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
 func TestGetMonetaryMetadata(t *testing.T) {
-	if !monetary.LocaleSupported() {
+	if !support.LocaleSupported() {
 		t.Skip("monetary metadata cannot be generated on the current platform")
 	}
 	metaData := GetMonetaryMetadata()
@@ -15,7 +15,7 @@ func TestGetMonetaryMetadata(t *testing.T) {
 }
 
 func TestGenerateGo(t *testing.T) {
-	if !monetary.LocaleSupported() {
+	if !support.LocaleSupported() {
 		t.Skip("monetary metadata cannot be generated on the current platform")
 	}
 	metaData := GetMonetaryMetadata()

@@ -1,6 +1,6 @@
 // +build darwin linux
 
-package monetary
+package support
 
 import (
 	"github.com/stretchr/testify/assert"

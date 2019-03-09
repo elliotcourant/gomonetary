@@ -37,14 +37,15 @@ func parseMoney(locale localeInfo, input string) (float64, error) {
 	}
 
 	/* we restrict dsymbol to be a single byte, but not the other symbols */
-	if locale.DecimalPoint != nil &&
-		len(locale.DecimalPoint) > 0 {
+	if locale.DecimalPoint != 0 {
 		dsymbol = string(locale.DecimalPoint)
 	} else {
 		dsymbol = "."
 	}
 
-	if locale.ThousandsSeparator != nil && len(locale.ThousandsSeparator) > 0 {
+	if locale.ThousandsSeparator != nil &&
+		len(locale.ThousandsSeparator) > 0 &&
+		!sliceEquals([]byte(dsymbol), locale.ThousandsSeparator) {
 		ssymbol = string(locale.ThousandsSeparator)
 	} else {
 		if dsymbol != "," {

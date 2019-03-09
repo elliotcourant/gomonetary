@@ -1,6 +1,6 @@
 // +build windows
 
-package monetary
+package support
 
 func LocaleSupported() bool {
 	return false

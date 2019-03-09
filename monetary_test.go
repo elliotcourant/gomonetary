@@ -63,14 +63,25 @@ func TestParse(t *testing.T) {
 		},
 	}
 	for _, val := range values {
-		t.Run(fmt.Sprintf("Locale: [%s]", val.Locale), func(t *testing.T) {
-			result, err := Parse(val.Input, val.Locale)
-			if val.ExpectedError != nil {
-				assert.EqualError(t, err, val.ExpectedError.Error())
-			} else {
-				assert.NoError(t, err, "no error should be returned")
-			}
-			assert.Equal(t, val.Expected, result, "should match expected")
+		t.Run(fmt.Sprintf("Locale:%s", val.Locale), func(t *testing.T) {
+			t.Run("String", func(t *testing.T) {
+				result, err := Parse(val.Input, val.Locale)
+				if val.ExpectedError != nil {
+					assert.EqualError(t, err, val.ExpectedError.Error())
+				} else {
+					assert.NoError(t, err, "no error should be returned")
+				}
+				assert.Equal(t, val.Expected, result, "should match expected")
+			})
+			t.Run("Bytes", func(t *testing.T) {
+				result, err := ParseBytes([]byte(val.Input), val.Locale)
+				if val.ExpectedError != nil {
+					assert.EqualError(t, err, val.ExpectedError.Error())
+				} else {
+					assert.NoError(t, err, "no error should be returned")
+				}
+				assert.Equal(t, val.Expected, result, "should match expected")
+			})
 		})
 	}
 }

@@ -1,6 +1,6 @@
 // +build windows
 
-package monetary
+package support
 
 import (
 	"github.com/stretchr/testify/assert"

@@ -1,6 +1,6 @@
 // +build darwin linux
 
-package monetary
+package support
 
 func LocaleSupported() bool {
 	return true

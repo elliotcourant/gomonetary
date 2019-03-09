@@ -13,6 +13,6 @@ func Parse(moneyString, locale string) (float64, error) {
 	return parseMoney(meta, moneyString)
 }
 
-func ParseBytes(moneyBytes, locale string) (float64, error) {
+func ParseBytes(moneyBytes []byte, locale string) (float64, error) {
 	return Parse(string(moneyBytes), locale)
 }
