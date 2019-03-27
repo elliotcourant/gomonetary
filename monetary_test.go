@@ -6,6 +6,41 @@ import (
 	"testing"
 )
 
+func TestGetDefaultLocale(t *testing.T) {
+	locale := GetDefaultLocale()
+	assert.Equal(t, "C", locale)
+}
+
+func TestSetDefaultLocale(t *testing.T) {
+	original := GetDefaultLocale()
+	newDefault := "POSIX"
+	err := SetDefaultLocale(newDefault)
+	assert.NoError(t, err)
+	locale := GetDefaultLocale()
+	assert.Equal(t, newDefault, locale)
+	err = SetDefaultLocale(original)
+	assert.NoError(t, err)
+}
+
+func TestFormatDefault(t *testing.T) {
+	value := 12.43
+	locale := GetDefaultLocale()
+	formattedNormal, err := Format(value, locale)
+	assert.NoError(t, err)
+	formattedDefault, err := FormatDefault(value)
+	assert.NoError(t, err)
+	assert.Equal(t, formattedNormal, formattedDefault)
+}
+
+func TestParseDefault(t *testing.T) {
+	value := 12.43
+	formattedDefault, err := FormatDefault(value)
+	assert.NoError(t, err)
+	parsed, err := ParseDefault(formattedDefault)
+	assert.NoError(t, err)
+	assert.Equal(t, value, parsed)
+}
+
 func TestParse(t *testing.T) {
 	values := []struct {
 		Locale        string
