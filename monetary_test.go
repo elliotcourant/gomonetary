@@ -32,6 +32,14 @@ func TestFormatDefault(t *testing.T) {
 	assert.Equal(t, formattedNormal, formattedDefault)
 }
 
+func TestFormatDefault1(t *testing.T) {
+	value := 12.43
+	formattedNormal, err := Format(value, "ja_JP")
+	assert.NoError(t, err)
+	parsed, err := Parse(formattedNormal, "ja_JP")
+	assert.Equal(t, value, parsed)
+}
+
 func TestParseDefault(t *testing.T) {
 	value := 12.43
 	formattedDefault, err := FormatDefault(value)

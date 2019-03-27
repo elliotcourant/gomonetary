@@ -17,6 +17,14 @@ var (
 	localeMonetaryCommand = `LC_MONETARY=%s locale -k LC_MONETARY`
 )
 
+var (
+	blacklist = map[string]interface{}{
+		"be_BY.CP1251": nil,
+		"is_IS":        nil,
+		"is_IS.UTF-8":  nil,
+	}
+)
+
 func main() {
 	golog.Infof("generating locale metadata")
 	meta := GetMonetaryMetadata()
@@ -223,6 +231,9 @@ var (
 	names := ""
 	var keys []string
 	for k := range meta {
+		if _, ok := blacklist[k]; ok {
+			continue
+		}
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)
